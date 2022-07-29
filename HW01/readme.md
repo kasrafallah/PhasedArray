@@ -142,19 +142,33 @@ $$Side lobes = (-180^{\circ} , -11.13 db), (180^{\circ} , -11.13db)$$
 There are some known effects of coupling between transmitting and receiving antenna patterns. First, It makes the sidelobe more dominant and increases its bandwidth and functional area. In addition, it can change the bandwidth of the beam. Finally, it makes an inductance between two paths, and this inductance can have some non-linear effects on our performance.
 
 
+## Question 4
+### Part A 
+Based on the data set we have frequencies from $50 GHz$ to $70 GHz$ in our set
+### Part B
+I extract data from the data set, ,and then plot all of them on one plot to compare them:
+
+<p align="center">
+<image align="center" src = "images/q4part1.png" width="600">
+</p>
+These s-parameters are from transmitter mode and receiving mode of one antenna, and their interference on each other and on themselves. As it is shown in Fig.18 $S_{12} = S_{21}$. These two show the coupling between transmitting mode and receiving mode of antenna. In other words, the effects of wave in transmitting mode in the receiving  mode, and visa versa is the parameter that we talked about. In addition, we obviously see that $S_{11} = S_{22}$, the symmetry of the problem give a rise to this output.
 
 
+### Part C
+For finding the 10 db band width we should calculate the distance between crossing point of $S_{11}$ or $S_{22}$ with -10 db band, and calculate the their difference in frequency:
 
+<p align="center">
+<image align="center" src = "images/q4part2.png" width="600">
+</p>
+$$10db BW = 66.7 10^9 - 56.4 10^9 =10.3 GHz$$
+Fractional bandwidth is the division of 10db BW into the lowest gain frequency in the problem so we will have:
+$$fractional bandwidth =  \frac{BW_{10db}}{F_{index min gain}}  =  \frac{10.3 GHz}{61.5GHz} = 16.75
+## Part D
 
+when we face coupling effect the energy that goes from $S_{1}$ to $S_{1} $ should be minimize because the most part of it is going to the environment, So the resonant frequency of antenna is the minimum gain for  $S_{11}$ so we have:
 
-
-
-
-
-
-
-
-
+$$resonant frequency = 61.5 GHz @ S_{12} = S_{21} = -16.17 db$$
+For solving this problem we can increase the distance between arrays but distance is also limited because we don't want to face fake peaks. Another way is using sub arrays with random forming which was discussed in the class.
 
 
 

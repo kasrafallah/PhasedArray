@@ -84,7 +84,7 @@ As we can see in Fig.7 both kind of band width are larger in the case of R1, and
 ### Part C + D
 I make a GIF for his part named Partd.gif which is available in the folder to show how the pattern change randomly. For choosing the best result I select the one which has the smallest side lobe. I run 100 times in the following figure, and choose between them:
 <p align="center">
-<image align="center" src = "images/ppartd.png" width="600">
+<image align="center" src = "images/partd.png" width="600">
 </p>
 I choose number 96 is the best of this pattern because all of the side lobe are less than 4 db:
 <p align="center">

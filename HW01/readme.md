@@ -101,23 +101,23 @@ First of all, we take a look at our data set, and there is crystal clear that $\
 ### Part b
 In this part, as the question told, first we should reshape the data to make our data in a standard form and generating 181 * 181 matrix for the values of this antenna pattern. After that I plot the result which is shown below:
 <p align="center">
-<image align="center" src = "images/q3part2.png" width="600">
+<image align="center" src = "images/Q3part2.png" width="600">
 </p>
 Also we can plot it in other form like this:
 <p align="center">
-<image align="center" src = "images/q3part21.png" width="600">
+<image align="center" src = "images/Q3part21.png" width="600">
 </p>
 ### Part c
 In this part I only follow up the description of CONTOURF command in Matlab, and then set the plot to draw the contour graph:
 
 <p align="center">
-<image align="center" src = "images/q3part3.png" width="600">
+<image align="center" src = "images/Q3part3.png" width="600">
 </p>
 
 ### Part d
 In this part I draw the beam pattern, and show the important values to use them in our calculation:
 <p align="center">
-<image align="center" src = "images/q3part4.png" width="600">
+<image align="center" src = "images/Q3part4.png" width="600">
 </p>
 Using values in the Fig.15 we will have:
 $$Maximum gain = 8.724 bd$$
@@ -130,7 +130,7 @@ $$Side lobes = (-154^{\circ} , -7.706 db), (166^{\circ} , -5.986)$$
 In this part I draw the beam pattern, and show the important values to use them in our calculation:
 
 <p align="center">
-<image align="center" src = "images/q3part5.png" width="600">
+<image align="center" src = "images/Q3part5.png" width="600">
 </p>
 
 Using values in the Fig. 16 we will have:

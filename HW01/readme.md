@@ -32,7 +32,30 @@ Now we should plot the pattern for $N = 10$ and d = $\frac{\lambda}{2}$ we will 
 </p>
 Now I want to compare these three graphs so I plot them in one figure to find out the differences:
 <p align="center">
+
+
 <image align="center" src = "images/compare.png" width="600">
 </p>
 
 It is obviously shown in the Figure above that 10 element array with $\lambda /2$ has the largest $BW_{Null to Null}$ and also it has the largest half power bandwidth. the side lobes are similar in the 4 element array and 10 elements with  $\lambda /2$ but in the other one there are another peaks in the pattern.
+
+### Part c
+
+First I calculate the equation of new array which will be:
+
+$$A F=\frac{1+e^{j \pi \cos \theta}+e^{j 4 \pi \cos \theta}+e^{j 6\pi \cos \theta}}{4}$$
+I plot both pattern for different values of $N$ and the best match was in the $N = 9$ which is shown below:
+
+<p align="center">
+<image align="center" src = "images/q1part3.png" width="600">
+</p>
+
+
+### Part d
+
+I load given data in the file and plot the real antenna pattern in the MATLAB that is shown below:
+<p align="center">
+<image align="center" src = "images/real.png" width="600">
+</p>
+we can readily calculate the band width from the Figure above and it will be:
+$$BW_{null to Null} = 150^{\circ} - 12^{\circ} = 138 ^{\circ}$$

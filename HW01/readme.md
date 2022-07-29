@@ -24,15 +24,15 @@ $$|A F|=\frac{\sin \left(\frac{10 \pi \cos \theta}{2}\right)}{10 \sin \left(\fra
 
 Now we plot it in matlab and the result is shown below:
 <p align="center">
-<image align="center" src = "q1part2pic1.png" width="600">
+<image align="center" src = "images/q1part2pic1.png" width="600">
 </p>
 Now we should plot the pattern for $N = 10$ and d = $\frac{\lambda}{2}$ we will have:
 <p align="center">
-<image align="center" src = "q1part2pic2.png" width="600">
+<image align="center" src = "images/q1part2pic2.png" width="600">
 </p>
 Now I want to compare these three graphs so I plot them in one figure to find out the differences:
 <p align="center">
-<image align="center" src = "compare.png" width="600">
+<image align="center" src = "images/compare.png" width="600">
 </p>
 
 It is obviously shown in the Figure above that 10 element array with $\lambda /2$ has the largest $BW_{Null to Null}$ and also it has the largest half power bandwidth. the side lobes are similar in the 4 element array and 10 elements with  $\lambda /2$ but in the other one there are another peaks in the pattern.

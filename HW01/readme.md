@@ -1,4 +1,4 @@
-
+## Question 1
 
 ### Part a
 
@@ -59,3 +59,27 @@ I load given data in the file and plot the real antenna pattern in the MATLAB th
 </p>
 we can readily calculate the band width from the Figure above and it will be:
 $$BW_{null to Null} = 150^{\circ} - 12^{\circ} = 138 ^{\circ}$$
+
+## Question 2
+
+### Part a
+I implemented desired code for this section, and then I plot the antenna pattern which is shown below:
+<p align="center">
+<image align="center" src = "images/q2part1.png" width="600">
+</p>
+
+### Part B
+
+I implemented desired code for this section in  part the only thing that is changed is the distance between all of the elements are multiplied in two, and then I plot the antenna pattern which is shown below:
+<p align="center">
+<image align="center" src = "images/q2part2.png" width="600">
+</p>
+Now for comparing this two patterns I draw them on one dingle figure:
+<p align="center">
+<image align="center" src = "images/q2compare.png" width="600">
+</p>
+As we can see in Fig.7 both kind of band width are larger in the case of R1, and it is compatible with our knowledge because the only effective parameter in bandwidth of uniform arrays is the length of array. In addition, the number of side lobes are increase in the case of R2. Finally, we are faced some fake peak side lobes in the case of R2; the main reason is that we are working at $f = 60 GHz$ so the wave length is $\lambda = \frac{3*10^8}{60 GHz} = 5 mm$, As a result in the case of R2 the distance between arrays is equal to the wavelength, and this will cause fake main lobes in the pattern.
+
+
+### Part C + D
+I make a GIF for his part named Partd.gif which is available in the folder to show how the pattern change randomly. For choosing the best result I select the one which has the smallest side lobe. I run 100 times in the following figure, and choose between them:

@@ -83,3 +83,82 @@ As we can see in Fig.7 both kind of band width are larger in the case of R1, and
 
 ### Part C + D
 I make a GIF for his part named Partd.gif which is available in the folder to show how the pattern change randomly. For choosing the best result I select the one which has the smallest side lobe. I run 100 times in the following figure, and choose between them:
+<p align="center">
+<image align="center" src = "images/ppartd.png" width="600">
+</p>
+I choose number 96 is the best of this pattern because all of the side lobe are less than 4 db:
+<p align="center">
+<image align="center" src = "images/best.png" width="600">
+</p>
+Learned points: when you randomize the place of arrays patterns can be changed a lot but in the most of  cases this randomization cancel the effect of fake main side lobes. Although this randomization give a rise to unknown pattern, It eliminate the situation which we have in the part b, and we never have fake main lobes with noisy locations.
+
+## Question 3
+### Part A
+First of all, we take a look at our data set, and there is crystal clear that $\phi$ and $\theta$ are changed with step of $2 ^{\circ}$, so the resolution of this measurement is $2 ^{\circ}$. In addition, the range of data cover all of the space so $\theta$ is from $- \pi$ to $+\pi$, and $\phi$ is from 0 to $+2 \pi$
+
+
+
+### Part b
+In this part, as the question told, first we should reshape the data to make our data in a standard form and generating 181 * 181 matrix for the values of this antenna pattern. After that I plot the result which is shown below:
+<p align="center">
+<image align="center" src = "images/q3part2.png" width="600">
+</p>
+Also we can plot it in other form like this:
+<p align="center">
+<image align="center" src = "images/q3part21.png" width="600">
+</p>
+### Part c
+In this part I only follow up the description of CONTOURF command in Matlab, and then set the plot to draw the contour graph:
+
+<p align="center">
+<image align="center" src = "images/q3part3.png" width="600">
+</p>
+
+### Part d
+In this part I draw the beam pattern, and show the important values to use them in our calculation:
+<p align="center">
+<image align="center" src = "images/q3part4.png" width="600">
+</p>
+Using values in the Fig.15 we will have:
+$$Maximum gain = 8.724 bd$$
+$$HPBW = 32 + 16 = 48 ^{\circ}$$
+$$Null points = (-172^{\circ} , -30,86 db), (-136^{\circ}, -11.2), (146^{\circ} , -14.88)$$
+$$Side lobes = (-154^{\circ} , -7.706 db), (166^{\circ} , -5.986)$$
+
+### Part e
+
+In this part I draw the beam pattern, and show the important values to use them in our calculation:
+
+<p align="center">
+<image align="center" src = "images/q3part5.png" width="600">
+</p>
+
+Using values in the Fig. 16 we will have:
+$$Maximum gain = 8.724 bd$$
+$$HPBW = 28 + 28 = 56 ^{\circ}$$
+$$Null points = (-154^{\circ} , -15.72 db), (+154^{\circ}, -15.26)$$
+$$Side lobes = (-180^{\circ} , -11.13 db), (180^{\circ} , -11.13db)$$
+### Part f
+There are some known effects of coupling between transmitting and receiving antenna patterns. First, It makes the sidelobe more dominant and increases its bandwidth and functional area. In addition, it can change the bandwidth of the beam. Finally, it makes an inductance between two paths, and this inductance can have some non-linear effects on our performance.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

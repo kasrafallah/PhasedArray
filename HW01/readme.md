@@ -149,7 +149,7 @@ Based on the data set we have frequencies from $50 GHz$ to $70 GHz$ in our set
 I extract data from the data set, ,and then plot all of them on one plot to compare them:
 
 <p align="center">
-<image align="center" src = "images/q4part1.png" width="600">
+<image align="center" src = "images/Q4part1.png" width="600">
 </p>
 These s-parameters are from transmitter mode and receiving mode of one antenna, and their interference on each other and on themselves. As it is shown in Fig.18 $S_{12} = S_{21}$. These two show the coupling between transmitting mode and receiving mode of antenna. In other words, the effects of wave in transmitting mode in the receiving  mode, and visa versa is the parameter that we talked about. In addition, we obviously see that $S_{11} = S_{22}$, the symmetry of the problem give a rise to this output.
 
@@ -158,17 +158,104 @@ These s-parameters are from transmitter mode and receiving mode of one antenna, 
 For finding the 10 db band width we should calculate the distance between crossing point of $S_{11}$ or $S_{22}$ with -10 db band, and calculate the their difference in frequency:
 
 <p align="center">
-<image align="center" src = "images/q4part2.png" width="600">
+<image align="center" src = "images/Q4part2.png" width="600">
 </p>
 $$10db BW = 66.7 10^9 - 56.4 10^9 =10.3 GHz$$
 Fractional bandwidth is the division of 10db BW into the lowest gain frequency in the problem so we will have:
-$$fractional bandwidth =  \frac{BW_{10db}}{F_{index min gain}}  =  \frac{10.3 GHz}{61.5GHz} = 16.75
-## Part D
+$$fractional bandwidth =  \frac{BW_{10db}}{F_{index min gain}}  =  \frac{10.3 GHz}{61.5GHz} = 16.75$$
+
+### Part D
 
 when we face coupling effect the energy that goes from $S_{1}$ to $S_{1} $ should be minimize because the most part of it is going to the environment, So the resonant frequency of antenna is the minimum gain for  $S_{11}$ so we have:
 
 $$resonant frequency = 61.5 GHz @ S_{12} = S_{21} = -16.17 db$$
 For solving this problem we can increase the distance between arrays but distance is also limited because we don't want to face fake peaks. Another way is using sub arrays with random forming which was discussed in the class.
+
+## Question 5
+
+### Part A & B
+
+For the arrays like the initial forming we just need to add $\delta\phi$ to the phase so we will have:
+$$|A F|=\frac{\sin \left(\frac{N}{2}(\psi+\Delta \phi)\right)}{N \sin \left(\frac{\psi+\Delta \phi}{2}\right)}$$
+Where $\psi=k_{0} d \sin (\theta)$
+<p align="center">
+<image align="center" src = "images/q5part1.png" width="600">
+</p>
+
+ also for $\phi = \pi$ we have:
+
+<p align="center">
+<image align="center" src = "images/q5part2.png" width="600">
+</p>
+Now we want to calculate the important parameters for this two situations so we need some measurements:
+
+
+<p align="center">
+<image align="center" src = "images/q5part3.png" width="600">
+</p>
+Using values in the Figure above we will have:
+
+$$Maximum gain = 1db$$
+$$HPBW =| -36 +24.3| = 11.7 ^{\circ}$$
+$$steering angle = -30.6 ^{\circ}$$
+$$Side lobes = (-51.84^{\circ} , -0.2247 db)$$
+need some measurements:
+
+<p align="center">
+<image align="center" src = "images/q5part4.png" width="600">
+</p>
+
+
+
+Using values in the Fig.21 we will have:
+$$Maximum gain = 1db$$
+$$HPBW =| 114.5 - 65.7 | = 48.8 ^{\circ}$$
+$$steering angle = 90 ^{\circ}$$
+$$Side lobes = (45.18^{\circ} , +0.2244 db)$$
+### Part C
+
+so for two desired situations we will have :
+( Also I make a GIF which shows the steering of beam beautifully Q5.gif)
+
+<p align="center">
+<image align="center" src = "images/q5part5.png" width="600">
+</p>
+### Part D
+From the lecture we know that the form of amplitude in frequency steering method is shown below:
+
+$$|A F|=\frac{\sin \left(\frac{N}{2}(\psi+\Delta \phi)\right)}{N \sin \left(\frac{\psi+\Delta \phi}{2}\right)}$$
+Where $\psi=k_{0}(f) \frac{\lambda_{0}}{2} \sin (\theta)$ and $∆ϕ = k0(f)λ0$
+
+## Question 6
+
+### Part A
+The angle of beam is small and we can readily write:
+$$\left(\frac{\theta}{2}\right)=\frac{1 m}{500 k m}$$
+so we will have:
+$$\theta=B W_{\max } \approx \frac{1}{250km} = 4 * 10^-6$$
+
+### Part B
+
+We have in the lecture that:
+$$HP BW \approx \frac{0.9 \lambda}{Nd}$$
+And we can assume that $\lambda/2 = d$:
+$$HP BW = \frac{1.8 }{N}  = 4 * 10^-6$$
+so the minimum number of array is:
+$$N = 4500000$$
+and the minimum length of array will be :
+$$N * \lambda /2 = \frac{4500000 * 3*10 ^8}{15 * 10 ^9 *2)}  = 450 m$$
+
+### Part C
+In the previous section, it was found that even if we use uniform arrays, which results in the smallest beam width, the length obtained for the array is not practical ( 450m is more than any satellite). We can use phased array to create small beam width, but it will cost too many processors ( if applied digitally) or many circuits.
+
+### Part D
+
+There was an article about PAMIR and I found below data from that:
+
+<p align="center">
+<image align="center" src = "images/q6.png" width="600">
+</p>
+
 
 
 
